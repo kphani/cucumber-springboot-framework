@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+
+resources:
+  isilon.url: https://isilonapi.bcmedproxy-dev.vtp.bskyb.com
+
+---
+
+spring:
+  config.activate.on-profile: dev
+
+details:
+  name: dev
+---
+
+spring:
+  config.activate.on-profile: int
+
+details:
+  name: int
+
+---

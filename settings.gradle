@@ -1,0 +1,3 @@
+rootProject.name = 'bdd-springboot-cucumber'
+include 'bdd-integration'
+
