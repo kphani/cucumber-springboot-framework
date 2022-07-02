@@ -2,22 +2,32 @@ spring:
   profiles:
     active: dev
 
-resources:
-  isilon.url: https://isilonapi.bcmedproxy-dev.vtp.bskyb.com
+testrun:
+  browser: chrome
+
+service:
+  configs:
+    micro1:
+      url: "http://micro1"
+      port: "1000"
+    micro2:
+      url: "http://micro2"
+      port: "2000"
 
 ---
 
 spring:
   config.activate.on-profile: dev
 
-details:
+testrun:
   name: dev
+
 ---
 
 spring:
   config.activate.on-profile: int
 
-details:
+testrun:
   name: int
 
 ---

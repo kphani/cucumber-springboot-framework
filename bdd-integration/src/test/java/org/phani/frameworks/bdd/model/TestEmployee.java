@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 public class TestEmployee {
     String name;
     String job;
-    int experience=100000;
+    int experience = 100000;
 
-    public String aboutHim(){
-        return "Test employee guy is awesome with experience of "+experience+" years";
+    public String aboutHim() {
+        return "This employee is awesome with experience of " + experience + " years";
     }
 }
